@@ -1,0 +1,130 @@
+
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<style>
+body, html {
+  height: 100%;
+  
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+
+
+  <div class="container mt-3">
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-white  w3-large">
+    
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64" ><span class="w3-tag w3-wide" style="background-color: blue;">ABOUT THE CANCER_ASSESSMENT</span></h5>
+        <p> <b>To provide support to healthcare providers and establish connections for cancer patients its medical advancement requires assistance or any other necessity.</b></p>
+        <p> <b>The place where patients will receive comprehensive information on the people who have symptoms but have not yet been diagnosed with cancer, or people who apply for a Cancer Screening Tool kit if they use faulty medicinal items.</b></p>
+        <p> <b>Tool kit for cancer screening—This kit is used to assess the cancer's activity.This can be carried out right here at our facility in your body.</b></p>
+    
+    
+        <img src="/test.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+        <p><strong>Opening hours:</strong> everyday 24/12 services are avialable.</p>
+        <p><strong>Address:</strong> Sector 18 Malkapur Dist-Buldhana </p>
+      </div>
+    </div>
+    
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+      <div class="w3-content" style="max-width:700px">
+     
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="background-color: blue;">Cancer Assessment Test</span></h5>
+      
+        <div class="w3-row w3-center w3-card w3-padding" style="background-color: rgb(141, 154, 243);">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+            <div class="w3-col s6 tablink" >CANCER_ASSESSMENT</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+            <div class="w3-col s6 tablink"></div>
+          </a>
+        </div>
+    
+        <div id="Eat" class="w3-container menu w3-padding-48 w3-card" style="background-color: rgb(179, 183, 215);">
+          <h5>Types of Cancer :-</h5>
+          <p class="w3-text-grey">Provides information on the various types of cancer, including its symptoms and causes.</p><br>
+        
+          <h5>Compensation :-</h5>
+          <p class="w3-text-grey">It will detail the defective medical product and the application form to file a lawsuit seeking compensation from the manufacturer.</p><br>
+        
+          <h5>Patient Details :- </h5>
+          <p class="w3-text-grey">Patient information has been updated, including the patient's name, address, kind of cancer, and phone number</p><br>
+        
+          <h5>Medical updates :-</h5>
+          <p class="w3-text-grey"> It will cover the most recent developments in medical research, cancer treatments, and details about organisations that support cancer sufferers.</p><br>
+        
+          <h5>Cancer screening kit :- </h5>
+          <p class="w3-text-grey"> Information regarding the cancer screening test kit and an application form for the kit will be provided.</p>
+        </div>
+    
+        
+    
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="background-color: rgb(48, 48, 250);">WHERE TO FIND US</span></h5>
+        <p>Find us at some address at some place.</p>
+        <img src="/map.png" class="w3-image" style="width:90%">
+        <br>
+        <br>
+        <p><span class="w3-tag">FYI!</span> “CANCER ASSESSMENT TEST” will help many patients with proper information 
+            about cancer and will serve as a flatform for them to meet an organization which will help 
+            them out with their problems. This will make the medical process faster and easier even 
+            with the help of Cancer screening test kits people will easily come to know about the 
+            type of cancer they are suffering from at their house itself</p>
+        <p><strong>____We the Cancer Assessment welcomes you to our services____</strong></p>
+      </div>
+    </div>
+    
+    <!-- End page content -->
+    </div>
+    </div>
+    
+    
+    
+    <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
+    
+
+</body>
+</html>
+
+{% endblock %}

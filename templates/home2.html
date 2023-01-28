@@ -1,0 +1,304 @@
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container  text-center mt-3 mb-3" >
+  <div class="row">
+    <div class="col-sm-5 col-md-6">
+      <img src="/test.png" class="img-fluid" alt="...">
+    </div>
+    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+      <h1 style="color: rgb(10, 91, 179);">Cancer Assessment</h1>
+      <h1 style="color: rgb(10, 91, 179);"></h1>
+      <h1 style="color: rgb(10, 91, 179);">Hope Never Dies</h1>
+      <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+    </div>
+  </div>
+
+  
+  <main role="main">
+
+  <div class="container-fluid">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img src="/earth.jpg" alt="Avatar" style="width:290px;height:190px;">
+          <h3 style="color: rgb(10, 91, 179);">Save World</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img src="/hope.jpg" alt="Avatar" style="width:290px;height:190px;">
+          <h3 style="color: rgb(10, 91, 179);">Keep Hopes</h3>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img src="/care.png" alt="Avatar" style="width:290px;height:190px;">
+          <h3 style="color: rgb(10, 91, 179);">Take Care of Health</h3>
+        </div>
+    </div>
+    </div>
+  </main>
+
+
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+
+    <main role="main">
+
+   <!--Build with Ease and Logos section-->
+   <div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4" style="color: rgb(250, 5, 5);"><b>Assess with ease.</b></h1>
+        </div>
+        <div class="col-12">
+            <p class="lead">
+                
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-bolt" aria-hidden="true" style="color: rgb(12, 2, 41);"></i>
+            <h3 style="color: rgb(10, 91, 179);">Fast</h3>
+            <p>Fast and Smooth Assessment.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-lock" aria-hidden="true" style="color: rgb(11, 4, 75);"></i>
+            <h3 style="color: rgb(10, 91, 179);">Secure</h3>
+            <p>Secure Assessment Process.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fa fa-check-square" aria-hidden="true" style="color: rgb(11, 2, 63);"></i>
+            <h3 style="color: rgb(10, 91, 179);">Reliable</h3>
+            <p>Reliable and Trustworthy Process.</p>
+        </div>
+    </div>
+    </div>
+    </main>
+
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+    <main role="main">
+
+  <div class="container">
+    <h1 style="color: rgb(255, 7, 7);">Types of Cancer</h1>
+    <h2>Discover <span>Types</span> of Cancer<em> added by us</em></h2>
+  </div>
+
+
+  <div class="container text-center mt-2 mb-2">
+    <div class="row">
+      <div class="col order-last">
+        <div class=" w3-center">
+          <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+          <h4>D-H Cancer</h4>
+          <div class="dropdown px-2 mb-1">
+            <button class="btn btn-info dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              D --- H Cancer
+            </button>
+            <ul class="dropdown-menu dropdown-menu-info mb-1">
+              <li><a class="dropdown-item " href="#">Desmoid Tumor</a></li>
+              <li><a class="dropdown-item" href="#">Eye Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Head and Neck Cancer</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class=" w3-center">
+          <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+          <h4>A-D Cancer</h4>
+          <div class="dropdown px-2 mb-1">
+            <button class="btn btn-info dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              A --- D Cancer
+            </button>
+            <ul class="dropdown-menu dropdown-menu-info mb-1">
+              <li><a class="dropdown-item " href="#">Adenoid Cystic Carcinoma </a></li>
+              <li><a class="dropdown-item" href="{{ url_for('bileductentry') }}">Bile Duct Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Childhood Cancer</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col order-first">
+        <div class="  w3-center">
+          <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+          <h4>Common Types</h4>
+          <div class="dropdown px-2 mb-1">
+            <button class="btn btn-info dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cancer Types
+            </button>
+            <ul class="dropdown-menu dropdown-menu-info mb-1">
+              <li><a class="dropdown-item " href="{{ url_for('bladderentry') }}">Bladder Cancer</a></li>
+              <li><a class="dropdown-item " href="{{ url_for('breastentry') }}">Breast Cancer</a></li>
+              <li><a class="dropdown-item " href="{{ url_for('lungentry') }}">Lung Cancer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center mt-2">
+    <div class="row">
+      <div class="col order-last">
+        <div class="  w3-center">
+          <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+          <h4>R-Z Cancer</h4>
+          <div class="dropdown px-2 mb-1">
+            <button class="btn btn-info dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              R --- Z Cancer
+            </button>
+            <ul class="dropdown-menu dropdown-menu-info mb-1">
+              <li><a class="dropdown-item" href="#">Thyroid Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Skin Cancer (Non-Melanoma)</a></li>
+              <li><a class="dropdown-item" href="#">Vaginal Cancer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="  w3-center">
+          <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+          <h4>M-Q Cancer</h4>
+          <div class="dropdown px-2 mb-1">
+            <button class="btn btn-info dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              M --- Q Cancer
+            </button>
+            <ul class="dropdown-menu dropdown-menu-info mb-1">
+              <li><a class="dropdown-item" href="#">Pancreatic Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Penile Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Multiple Myeloma</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col order-first">
+        <div class="  w3-center">
+          <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar">
+          <h4>I-L Cancer</h4>
+          <div class="dropdown px-2 mb-1">
+            <button class="btn btn-info dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              I --- L Cancer
+            </button>
+            <ul class="dropdown-menu dropdown-menu-info mb-1">
+              <li><a class="dropdown-item" href="#">Kidney Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Liver Cancer</a></li>
+              <li><a class="dropdown-item" href="#">Lung Cancer - Small Cell</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+
+  <div class="container mt-3 mb-3">
+    <div class="jumbotron">
+      <h1 style="color: rgb(255, 7, 7);">Screening Tool Kit Guides</h1>
+      <h2><i>This is the guide for the Screening toolkit.</i> </h2>
+    </div>
+
+  </div>
+
+  <!-- Jumbotron -->
+  <div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('/.png');
+    height: 100px;
+  ">
+    <div class="chip">
+      <img src="/blue.jpg" alt="Person" width="80" height="80">
+      <a href="{{ url_for('test') }}"><b>Screening Tool Kit Guide ---></b></a>
+    </div>
+  </div>
+
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <!-- Jumbotron -->
+
+
+  <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1700px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b>About Us</b></h1>
+      <p>Welcome to the blog of <span class="w3-tag">Cancer Assessment</span></p>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row ">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12 ">
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-center w3-white">
+          <img src="/about.jpeg" alt="Nature" style="width:70%">
+          <div class="w3-container">
+            <h3><b>Cancer Assessment</b></h3>
+            <h5>, <span class="w3-opacity">December 1, 2022</span></h5>
+            <p> <b>To provide support to healthcare providers and establish connections for cancer patients its medical advancement requires assistance or any other necessity.</b></p>
+          </div>
+
+          <div class="w3-container">
+            <pTo provide support to healthcare providers and establish connections for cancer patients its medical advancement requires assistance or any other necessity.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-color-red w3-white w3-border"><a href="{{ url_for('test') }}"><b>READ MORE »</b></a></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-card w3-margin w3-margin-top">
+          <img src="/cancerscreen.jpg" style="width:100%">
+          <div class="w3-container w3-white">
+            <h6><b>Virtual DR. Cancer Assessment</b></h6>
+            <p>Screening tests can help find cancer at an early stage, before symptoms appear. When abnormal tissue or cancer is found early, it may be easier to treat or cure. By the time symptoms appear, the cancer may have grown and spread. This can make the cancer harder to treat or cure.
+
+              It is important to remember that when your doctor suggests a screening test, it does not always mean he or she thinks you have cancer. Screening tests are done when you have no cancer symptoms.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+        {% endblock %}

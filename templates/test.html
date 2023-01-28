@@ -1,0 +1,45 @@
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<img src="/test.png" alt="Paris" class="center ">
+<img src="/test2.png" alt="Paris" class="center mt-2 ">
+
+<div class="container">
+<img src="/8.png" class="img-fluid" width="1120px" , height="400px" alt="...">
+<img src="/4.png" class="img-fluid" width="1120px" , height="400px" alt="...">
+<img src="/5.png" class="img-fluid" width="1120px" , height="400px" alt="...">
+<img src="/6.png" class="img-fluid" width="1120px" , height="400px"  alt="...">
+<img src="/7.png" class="img-fluid" width="1120px" , height="400px"  alt="...">
+</div>
+
+
+<!-- Jumbotron -->
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('/.png');
+    height: 400px;
+  ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Screening Toolkit</h1>
+        <h4 class="mb-3">Cancer Assessment</h4>
+        <h4 class="mb-3">Click on the given button to get your Testing kits</h4>
+        <a class="btn btn-outline-light btn-lg mb-2" href="{{ url_for('kitform') }}" role="button">
+          <b>To Place Order CLick me</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Jumbotron -->
+
+
+
+{% endblock %}

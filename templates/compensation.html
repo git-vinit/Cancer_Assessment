@@ -1,0 +1,57 @@
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<div class="container mt-3">
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-white  w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"><b>Compensation</b></span></h5>
+        <p style="text-align:center"> <b>The Cancer Benefits Center (CBC) helps Indians who have been exposed to
+            government-created radiation – and subsequently were diagnosed with cancer as a result of that exposure - to
+            get the compensation they deserve.</b></p>
+        <p style="text-align:center"> <b>We pride ourselves on unparalleled service, tailored to your unique needs, and
+            we aim to help you obtain the largest financial award possible. Our success rate is better than 90 percent.
+            The friendly staff at CBC is waiting to hear from you. Call anytime: 24 hours a day, 7 days a week for a
+            free evaluation.</b></p>
+        <p style="text-align:center"> <b>This is not a class-action lawsuit, but rather a group of Organisations
+            programs. The programs have been approved and the compensation made available by the Manufacturers</b></p>
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"><b>CONTACT US FOR THE BENEFITS -></b> <a
+              class="btn btn-primary mt-2 mb-2" href="{{ url_for('contactus') }}" role="button">Click here</a></span>
+        </h5>
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"><b> Organisations working for Wellfare of
+              cancer patients : </b></span></h5>
+
+        <p style="text-align:center"><b>FAULTY Medical Products Recalled In INDIA </b><br>
+          <b><u>Dove, other Unilever dry shampoos recalled over cancer risk.</u></b>
+        </p>
+        <p style="text-align:center">
+          Unilever has recalled its aerosol dry shampoo products such as Dove, Tresemme, etc. due to the presence of
+          carcinogenic content. The product recall meaning calling the products from the market immediately. It's not a
+          new thing. Earlier, we have seen many product recalls by big companies from the market due to various reasons
+          from Nestle India to Starbucks, Ikea to Volkswagen. Here are some interesting product recalls by big brands
+          from the market to avoid a disaster and ensue controversy they faced.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <img src="/test.png" alt="Paris" class="center  ">
+
+
+    {% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h2 style="text-align:center">Profile Page</h2>
+<div>
+    <p style="text-align:center">Your account details are below:</p>
+    <table style="border:3px solid black;margin-left:auto;margin-right:auto; mt-3" >
+        <tr>
+            <img src="/pro.jpg" alt="Paris" style="height: 200px; width: 200px ;  " class="center ">
+        </tr>
+        <tr >
+            <td >Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr >
+            <td >Password:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr >
+            <td >Email:</td>
+            <td>{{ account['mail'] }}</td>
+        </tr>
+    </table>
+</div>
+</div>
+{% endblock %}

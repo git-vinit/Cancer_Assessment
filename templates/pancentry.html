@@ -1,0 +1,53 @@
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<div class="container text-center mt-3">
+    <div class="row">
+      <div class="col order-last">
+        <button ><a class="nav-link active"  href="{{ url_for('pancsym') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>SYMPTOMS AND SIGN</b></a></button>
+      </div>
+      <div class="col">
+        <button ><a class="nav-link active"  href="{{ url_for('panctypes') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>TYPES OF CANCER</b></a></button>
+      </div>
+      <div class="col order-first">
+        <button ><a class="nav-link active"  href="{{ url_for('panc') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>INTRODUCTION AND ABOUT</b></a></button>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center mt-3">
+    <div class="row">
+      <div class="col order-last">
+        <button ><a class="nav-link active"  href="{{ url_for('pancstages') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>STAGES AND GRADES</b></a></button>
+      </div>
+      <div class="col">
+        <button ><a class="nav-link active"  href="{{ url_for('pancdiag') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>DIAGNOSIS</b></a></button>
+      </div>
+      <div class="col order-first">
+        <button ><a class="nav-link active"  href="{{ url_for('panctreatments') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>TYPES OF TREATMENT</b></a></button>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center mt-3">
+    <div class="row">
+      <div class="col order-last">
+        <button ><a class="nav-link active"  href="{{ url_for('pancriskprev') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>RISK AND PREVENTIONS</b></a></button>
+      </div>
+      <div class="col">
+        <button ><a class="nav-link active"  href="{{ url_for('pancmediillus') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>MEDICAL ILLUSTARTION</b></a></button>
+      </div>
+      <div class="col order-first">
+        <button ><a class="nav-link active"  href="{{ url_for('pancstat') }}"> <img class="w3-square" src="/cancerlogo.png" style="width:10%" alt="avatar"><b>STATISTICS</b></a></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<img src="/test.png" alt="Paris" class="center ">
+    <div class="form-center">
+        <form method="POST">
+
+            <div class="input">
+                <label> <b>Phone number </b></label>
+                <input class="form-control " type="text" value="" name="ph" aria-label="Disabled input example">
+            </div>
+
+            <div class="input">
+                <label><b>Mail</b> </label>
+                <input class="form-control" type="text" value="" name="mail">
+            </div>
+
+            <div class="input">
+                <label><b>Name</b></label>
+                <input class="form-control" type="text" value="" name="name">
+            </div>
+
+            <div class="input">
+                <label><b>Type of Cancer</b></label>
+                <input class="form-control" type="text" value="" name="type_of_cancer">
+            </div>
+
+            <div class="input">
+                <label><b>Age</b></label>
+                <input class="form-control" type="text" value="" name="age">
+            </div>
+            <button type="submit" class="btn btn-dark mt-2 mb-2">Submit</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+{% endblock %}
